@@ -42,11 +42,23 @@
         <label for="user_email">Email Address <span>*</span></label>
         <input id="user_email" name="user_email" type="email" required>
       </div>
-      <div class="query-field form-item">
-        <label for="query">Query Type</label>
-        <div class="radio-button-wrapper">
-          <input type="radio">
-        </div>
+      <fieldset class="query-field form-item">
+        <legend>Query Type <span>*</span></legend>
+        <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" required>
+        <label for="general-enquiry">General Enquiry</label>
+        <input type="radio" name="query-type" id="support-requiest" value="support-requiest" required>
+        <label for="support-requiest">Support Request</label>
+      </fieldset>
+      <div class="message-field form-item">
+        <label for="message">Message <span>*</span></label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <div class="consent-field form-item">
+        <input type="checkbox" id="user_consent" name="user_consent" required>
+        <label for="user_consent">I consent to being contacted by the team <span>*</span></label>
+      </div>
+      <div class="submit-button-field form-item">
+        <button>Submit</button>
       </div>
     </form>
   </div>
@@ -54,23 +66,23 @@
 
   
  <!-- Please enter a valid email address
-  This field is required -->
+  This field is required 
 
   
-  General Enquiry
-  Support Request
+  
+  
   Please select a query type
 
-  Message
+  
   This field is required
 
-  I consent to being contacted by the team
+  
   To submit this form, please consent to being contacted
 
   Submit
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  Thanks for completing the form. We'll be in touch soon! -->
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
