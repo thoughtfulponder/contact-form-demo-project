@@ -10,13 +10,86 @@ body {
 
 body {
     background-color: hsl(148, 38%, 91%);
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    overflow: scroll;
 }
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    
     justify-content: center;
     align-items: center;
 }
+
+form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.consent-field {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.radio-wrapper,
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    border: 1px solid hsl(187, 24%, 22%);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.form-item textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form-item span {
+    color: hsl(169, 82%, 27%);
+}
+
+.form-item button {
+    background-color: hsl(169, 82%, 27%);
+}
+
+h1, 
+.form-item label,
+.form-item legend {
+    color: hsl(187, 24%, 22%);
+}
+
+h1 {
+    text-align: left;
+}
+
+.query-field {
+    border: none;
+}
+
+@media (min-width: 700px) {
+    .container {
+        width: 600px;
+    }
+    
+    .first-name,
+    .last-name,
+    .radio-wrapper,
+    input[type="radio"] {
+        width: 50%;
+    }    
+}
+
