@@ -12,30 +12,36 @@ body {
     background-color: hsl(148, 38%, 91%);
     display: flex;
     flex-direction: column;
-    /*justify-content: center; */
+   /* justify-content: center; */
     align-items: center;
     min-height: 100vh;
     overflow: scroll;
+    font-family: "Karla", sans-serif;
 }
 
 .container {
     background-color: hsl(0, 0%, 100%);
     width: 300px;
     padding: 20px;
-    
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+   /* justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 form {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
 .form-item {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 10px;
+    margin: 10px 0;
 }
 
 .consent-field {
@@ -64,6 +70,10 @@ form {
 
 .form-item button {
     background-color: hsl(169, 82%, 27%);
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
 }
 
 h1, 
@@ -74,10 +84,17 @@ h1,
 
 h1 {
     text-align: left;
+    font-weight: 700;
 }
 
 .query-field {
     border: none;
+    
+}
+
+.form-item label {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 @media (min-width: 700px) {
@@ -87,9 +104,18 @@ h1 {
     
     .first-name,
     .last-name,
-    .radio-wrapper,
-    input[type="radio"] {
+    .radio-wrapper {
         width: 50%;
-    }    
+    }
+
+    
+
+    .query-field {
+        flex-direction: row;
+    }
+
+    .form-item textarea {
+        height: 60px;
+    }
 }
 
