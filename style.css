@@ -103,12 +103,17 @@ h1 {
     }
     
     .first-name,
-    .last-name,
+    .last-name {
+        width: 275px;
+    }
+
+    .first-name {
+        margin-right: 10px;
+    }
+
     .radio-wrapper {
         width: 50%;
     }
-
-    
 
     .query-field {
         flex-direction: row;
