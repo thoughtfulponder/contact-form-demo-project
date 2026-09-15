@@ -97,11 +97,18 @@ h1 {
     font-weight: 400;
 }
 
- .form-item input:focus,
- .form-item textarea:focus,
- .form-item .radio-wrapper:focus {
+ .form-item input:hover,
+ .form-item textarea:hover,
+ .form-item .radio-wrapper:hover {
     border: 1px solid hsl(169, 82%, 27%);;
  }
+
+ 
+
+ .consent-field p {
+    align-self: flex-end;
+ }
+ 
 
 @media (min-width: 700px) {
     .container {
@@ -118,7 +125,7 @@ h1 {
     }
 
     .radio-wrapper {
-        width: 50%;
+        width: 100%;
     }
 
     .query-field {
