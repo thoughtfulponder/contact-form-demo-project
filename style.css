@@ -110,6 +110,7 @@ h1 {
 
  p {
     visibility: hidden;
+    color: hsl(0, 66%, 54%);
  }
 
 @media (min-width: 700px) {
