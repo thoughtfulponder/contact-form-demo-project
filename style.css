@@ -103,7 +103,7 @@ h1 {
     border: 1px solid hsl(169, 82%, 27%);
  }
 
- .form-item .radio-wrapper input:checked {
+ .radio-wrapper:active {
     border:1px solid hsl(169, 82%, 27%);
     background-color: hsl(148, 38%, 91%);
  }
@@ -111,6 +111,10 @@ h1 {
  p {
     visibility: hidden;
     color: hsl(0, 66%, 54%);
+ }
+
+ input:invalid {
+    border: 2px solid hsl(0, 66%,54%);
  }
 
 @media (min-width: 700px) {
