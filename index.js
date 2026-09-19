@@ -5,6 +5,8 @@ const input = document.querySelector("input");
 function showErrorMsg() {
     if (input.value === "") {
         customErrorMsg.style.visibility = "visible";
+    } else {
+        customErrorMsg.style.visibility = "hidden";
     }
 }
 
